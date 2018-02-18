@@ -6,8 +6,8 @@ MAINTAINER Venkat Malladi  <venkat.malladi@utsouthwestern.edu>
 
 # Install pre-requistes
 
-RUN apt-get update --fix-missing && \
-  apt-get install -y install libgl1-mesa-glx
+RUN apt-get -y update && \
+    apt-get -y install libgl1-mesa-glx 
 
 RUN \
   conda update -y conda
